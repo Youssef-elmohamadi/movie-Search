@@ -23,11 +23,15 @@ function showSearchList(data) {
   data.forEach((movie) => {
     const searchItemContainer = document.createElement("div");
     searchItemContainer.classList.add("d-flex", "search-item");
+    const posterUrl =
+      movie.Poster !== "N/A"
+        ? movie.Poster
+        : "assets/image/image_not_found.png";
     searchItemContainer.innerHTML = `
                  <div class="image">
                     <img
                       class="w-100 h-100 p-2"
-                      src=${movie.Poster}
+                      src=${posterUrl}
                       alt=""
                     />
                   </div>
@@ -83,10 +87,12 @@ function createMovieDetails(data) {
     "align-items-center",
     "w-100"
   );
+  const posterUrl =
+    data.Poster !== "N/A" ? data.Poster : "assets/image/image_not_found.png";
   movieBody.innerHTML = ` <div class="image-film">
             <img
               class="w-100 h-100 img-thumbnail"
-              src=${data.Poster}
+              src=${posterUrl}
               alt=""
             />
           </div>
