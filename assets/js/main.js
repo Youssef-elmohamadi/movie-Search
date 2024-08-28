@@ -4,7 +4,7 @@ const movieBody = document.createElement("div");
 const searchInput = document.querySelector(".form-control");
 function fetchForSearch(searchWords) {
   const APIKey = "22971a85";
-  const URL = `http://www.omdbapi.com/?s=${searchWords}&page=2&apikey=${APIKey}`;
+  const URL = `https://www.omdbapi.com/?s=${searchWords}&page=2&apikey=${APIKey}`;
   fetch(URL)
     .then((response) => response.json())
     .then((data) => {
