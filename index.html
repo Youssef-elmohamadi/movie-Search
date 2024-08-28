@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie website</title>
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="logo fs-3 fw-bold text-light py-3">
+      Movie<span class="text-warning">Corn.</span>
+    </div>
+    <div
+      class="container flex-column d-flex justify-content-center align-items-center"
+    >
+      <div
+        class="search-box position-relative d-flex justify-content-center align-items-center"
+      >
+        <div
+          class="w-100 w-25% p-2 d-flex justify-content-center align-items-center"
+        >
+          <label
+            for="search-movie "
+            class="fs-4 p-3 fw-bold text-light col-form-label"
+            >Search Movie:</label
+          >
+          <div class="col-5">
+            <input
+              type="text"
+              onkeyup=" search()"
+              class="form-control p-3 fs-5"
+              id="search-movie"
+              value=""
+              placeholder="Search Movie Title ..."
+            />
+          </div>
+        </div>
+        <div
+          class="search-list hide-search-list shadow p-3 mb-5 rounded justify-content-center align-items-center position-absolute flex-column"
+        ></div>
+      </div>
+      <div class="films">
+        <!-- <div
+          class="film-component p-3 mt-5 d-flex gap-5 justify-content-center align-items-center w-100"
+        >
+          <div class="image-film">
+            <img
+              class="w-100 h-100 .img-thumbnail"
+              src="assets/image/medium-cover.jpg"
+              alt=""
+            />
+          </div>
+          <div class="info-film w-50">
+            <h3 class="movie-title text-warning">
+              Guardians of the Galaxy Vol. 2
+            </h3>
+            <ul
+              class="movie-misc-info text-light list-group d-flex w-100 justify-content-start"
+            >
+              <li
+                class="list-group-item year w-100 text-light py-2 px-0 bg-transparent border-0"
+              >
+                Year: 2017
+                <span class="p-2 rounded bg-warning fw-bold"
+                  >Ratings: PG-13 </span
+                >Released: 05 May 2017
+              </li>
+            </ul>
+            <p class="genre p-3 rounded text-light">
+              <b>Genre:</b> Action, Adventure, Comedy
+            </p>
+            <p class="writer p-1 text-light">
+              <b>Writer:</b> James Gunn, Don Abnett, Andy Lanning
+            </p>
+            <p class="actors p-1 text-light">
+              <b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista
+            </p>
+            <p class="plot p-1 text-light">
+              <b>Plot:</b> The Guardians struggle to keep together as a team
+              while dealing with their personal family issues, notably
+              Star-Lord's ecounter with his father the ambitious celestial being
+              Ego.
+            </p>
+            <p class="language p-1 text-light"><b>Language:</b> English</p>
+            <p class="awards p-1 text-warning">
+              <b><i class="fas fa-award"></i></b> Nominated for 1 Oscar
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
