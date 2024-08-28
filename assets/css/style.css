@@ -7,6 +7,14 @@ body {
   background-color: #171717;
 }
 .search-list {
+  background-color: #262525;
+  top: 70%;
+  position: absolute;
+  left: 40%;
+  max-height: 300px;
+  overflow: auto;
+  overflow-y: scroll;
+  width: 50%;
   z-index: 999;
 }
 
@@ -19,15 +27,6 @@ body {
 .image {
   width: 70px;
   height: 70px;
-}
-.search-list {
-  background-color: #262525;
-  top: 140px;
-  left: 365px;
-  max-height: 300px;
-  overflow: auto;
-  overflow-y: scroll;
-  min-width: 300px;
 }
 
 .search-list::-webkit-scrollbar {
@@ -59,4 +58,34 @@ body {
 
 .hide-search-list {
   display: none !important;
+}
+
+@media (max-width: 767px) {
+  .film-component {
+    flex-direction: column !important;
+  }
+  .info-film {
+    width: 100% !important;
+  }
+  .search-box {
+    background-color: #1d1d1d;
+    height: 200px;
+    width: 600px;
+  }
+
+  .search-list {
+  }
+}
+@media (max-width: 552px) {
+  .film-component {
+    flex-direction: column !important;
+  }
+  .info-film {
+    width: 100% !important;
+  }
+  .search-box {
+    background-color: #1d1d1d;
+    height: 200px;
+    width: 525px;
+  }
 }
